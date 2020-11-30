@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F75232C07A4385740A9D4A2B /* Pods_KartingTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C2C94286F04316996795EC /* Pods_KartingTracker.framework */; };
+		FA34AEF92575355800770CBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34AEF82575355800770CBF /* AppDelegate.swift */; };
+		FA34AEFB2575355800770CBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34AEFA2575355800770CBF /* SceneDelegate.swift */; };
+		FA34AF002575355800770CBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA34AEFE2575355800770CBF /* Main.storyboard */; };
+		FA34AF022575355800770CBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA34AF012575355800770CBF /* Assets.xcassets */; };
+		FA34AF052575355800770CBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA34AF032575355800770CBF /* LaunchScreen.storyboard */; };
+		FAD4986C257556460055BEE7 /* AddRaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4986B257556460055BEE7 /* AddRaceViewController.swift */; };
+		FAD4986E257560FB0055BEE7 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4986D257560FB0055BEE7 /* Protocol.swift */; };
+		FAE69A512575361800FE696E /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE69A502575361800FE696E /* Race.swift */; };
+		FAE69A5525753B8700FE696E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE69A5425753B8600FE696E /* MainViewController.swift */; };
+		FAE69A5825753C3100FE696E /* RaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE69A5625753C3100FE696E /* RaceTableViewCell.swift */; };
+		FAE69A5925753C3100FE696E /* RaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE69A5725753C3100FE696E /* RaceTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23C2C94286F04316996795EC /* Pods_KartingTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KartingTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6374DA66E053B395468C7D7 /* Pods-KartingTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KartingTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KartingTracker/Pods-KartingTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		EC28A4FA84A1D8FE74C6A207 /* Pods-KartingTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KartingTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-KartingTracker/Pods-KartingTracker.release.xcconfig"; sourceTree = "<group>"; };
+		FA34AEF52575355800770CBF /* KartingTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KartingTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA34AEF82575355800770CBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA34AEFA2575355800770CBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA34AEFF2575355800770CBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA34AF012575355800770CBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA34AF042575355800770CBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA34AF062575355800770CBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD4986B257556460055BEE7 /* AddRaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRaceViewController.swift; sourceTree = "<group>"; };
+		FAD4986D257560FB0055BEE7 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		FAE69A502575361800FE696E /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
+		FAE69A5425753B8600FE696E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FAE69A5625753C3100FE696E /* RaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTableViewCell.swift; sourceTree = "<group>"; };
+		FAE69A5725753C3100FE696E /* RaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RaceTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA34AEF22575355800770CBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F75232C07A4385740A9D4A2B /* Pods_KartingTracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F21EB7DF02E8E6832B61463 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23C2C94286F04316996795EC /* Pods_KartingTracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2D37A1548CB2CFF12ADFA8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6374DA66E053B395468C7D7 /* Pods-KartingTracker.debug.xcconfig */,
+				EC28A4FA84A1D8FE74C6A207 /* Pods-KartingTracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA34AEEC2575355800770CBF = {
+			isa = PBXGroup;
+			children = (
+				FA34AEF72575355800770CBF /* KartingTracker */,
+				FA34AEF62575355800770CBF /* Products */,
+				D2D37A1548CB2CFF12ADFA8D /* Pods */,
+				5F21EB7DF02E8E6832B61463 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA34AEF62575355800770CBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA34AEF52575355800770CBF /* KartingTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA34AEF72575355800770CBF /* KartingTracker */ = {
+			isa = PBXGroup;
+			children = (
+				FA34AEF82575355800770CBF /* AppDelegate.swift */,
+				FAE69A5A25753D0300FE696E /* Cell */,
+				FA34AEFA2575355800770CBF /* SceneDelegate.swift */,
+				FAE69A5325753A3900FE696E /* AddRace */,
+				FAE69A5225753A3100FE696E /* Main */,
+				FAE69A4F2575360E00FE696E /* Model */,
+				FA34AEFE2575355800770CBF /* Main.storyboard */,
+				FA34AF012575355800770CBF /* Assets.xcassets */,
+				FA34AF032575355800770CBF /* LaunchScreen.storyboard */,
+				FA34AF062575355800770CBF /* Info.plist */,
+			);
+			path = KartingTracker;
+			sourceTree = "<group>";
+		};
+		FAE69A4F2575360E00FE696E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAE69A502575361800FE696E /* Race.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAE69A5225753A3100FE696E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4986D257560FB0055BEE7 /* Protocol.swift */,
+				FAE69A5425753B8600FE696E /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FAE69A5325753A3900FE696E /* AddRace */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4986B257556460055BEE7 /* AddRaceViewController.swift */,
+			);
+			path = AddRace;
+			sourceTree = "<group>";
+		};
+		FAE69A5A25753D0300FE696E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FAE69A5625753C3100FE696E /* RaceTableViewCell.swift */,
+				FAE69A5725753C3100FE696E /* RaceTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA34AEF42575355800770CBF /* KartingTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA34AF092575355800770CBF /* Build configuration list for PBXNativeTarget "KartingTracker" */;
+			buildPhases = (
+				27FB440937E027086FC4809C /* [CP] Check Pods Manifest.lock */,
+				FA34AEF12575355800770CBF /* Sources */,
+				FA34AEF22575355800770CBF /* Frameworks */,
+				FA34AEF32575355800770CBF /* Resources */,
+				7E0B8E82171212D409522179 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KartingTracker;
+			productName = KartingTracker;
+			productReference = FA34AEF52575355800770CBF /* KartingTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA34AEED2575355800770CBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Alexandr Khrutskiy";
+				TargetAttributes = {
+					FA34AEF42575355800770CBF = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FA34AEF02575355800770CBF /* Build configuration list for PBXProject "KartingTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA34AEEC2575355800770CBF;
+			productRefGroup = FA34AEF62575355800770CBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA34AEF42575355800770CBF /* KartingTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA34AEF32575355800770CBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE69A5925753C3100FE696E /* RaceTableViewCell.xib in Resources */,
+				FA34AF052575355800770CBF /* LaunchScreen.storyboard in Resources */,
+				FA34AF022575355800770CBF /* Assets.xcassets in Resources */,
+				FA34AF002575355800770CBF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27FB440937E027086FC4809C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KartingTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E0B8E82171212D409522179 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KartingTracker/Pods-KartingTracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KartingTracker/Pods-KartingTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA34AEF12575355800770CBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE69A512575361800FE696E /* Race.swift in Sources */,
+				FA34AEF92575355800770CBF /* AppDelegate.swift in Sources */,
+				FAE69A5825753C3100FE696E /* RaceTableViewCell.swift in Sources */,
+				FAD4986E257560FB0055BEE7 /* Protocol.swift in Sources */,
+				FAD4986C257556460055BEE7 /* AddRaceViewController.swift in Sources */,
+				FA34AEFB2575355800770CBF /* SceneDelegate.swift in Sources */,
+				FAE69A5525753B8700FE696E /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA34AEFE2575355800770CBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA34AEFF2575355800770CBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA34AF032575355800770CBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA34AF042575355800770CBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA34AF072575355800770CBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA34AF082575355800770CBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA34AF0A2575355800770CBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6374DA66E053B395468C7D7 /* Pods-KartingTracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KartingTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alex.KartingTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA34AF0B2575355800770CBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC28A4FA84A1D8FE74C6A207 /* Pods-KartingTracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KartingTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alex.KartingTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA34AEF02575355800770CBF /* Build configuration list for PBXProject "KartingTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA34AF072575355800770CBF /* Debug */,
+				FA34AF082575355800770CBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA34AF092575355800770CBF /* Build configuration list for PBXNativeTarget "KartingTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA34AF0A2575355800770CBF /* Debug */,
+				FA34AF0B2575355800770CBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA34AEED2575355800770CBF /* Project object */;
+}
