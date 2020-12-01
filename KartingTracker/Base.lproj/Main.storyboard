@@ -67,8 +67,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="O5M-mO-4U5">
-                                <rect key="frame" x="20" y="147" width="374" height="162"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Дата" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lDW-L5-t7b">
+                                <rect key="frame" x="20" y="174" width="168" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="168" id="AKX-Aa-oN1"/>
+                                    <constraint firstAttribute="height" constant="34" id="g7P-CT-lRh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="O5M-mO-4U5">
+                                <rect key="frame" x="20" y="646" width="374" height="162"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="4bD-YX-cJv"/>
                                     <constraint firstAttribute="height" constant="162" id="qnz-4a-JaQ"/>
@@ -80,9 +89,11 @@
                             <constraint firstItem="a18-l5-kNZ" firstAttribute="top" secondItem="vxU-2A-kkJ" secondAttribute="bottom" constant="8" id="5bP-p2-LoZ"/>
                             <constraint firstItem="O5M-mO-4U5" firstAttribute="top" secondItem="a18-l5-kNZ" secondAttribute="bottom" constant="8" id="7IT-fL-kpY"/>
                             <constraint firstItem="a18-l5-kNZ" firstAttribute="leading" secondItem="tfw-ug-tT5" secondAttribute="leading" constant="20" id="7nf-JD-6aU"/>
+                            <constraint firstItem="lDW-L5-t7b" firstAttribute="leading" secondItem="tfw-ug-tT5" secondAttribute="leading" constant="20" id="E9h-mM-tKn"/>
                             <constraint firstItem="O5M-mO-4U5" firstAttribute="leading" secondItem="tfw-ug-tT5" secondAttribute="leading" constant="20" id="KYm-Z6-8fw"/>
                             <constraint firstItem="vxU-2A-kkJ" firstAttribute="leading" secondItem="tfw-ug-tT5" secondAttribute="leading" constant="20" id="MOD-Im-P6O"/>
                             <constraint firstItem="vxU-2A-kkJ" firstAttribute="top" secondItem="tfw-ug-tT5" secondAttribute="top" id="NSe-ER-GER"/>
+                            <constraint firstItem="lDW-L5-t7b" firstAttribute="top" secondItem="a18-l5-kNZ" secondAttribute="bottom" constant="35" id="mBl-qR-fkZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tfw-ug-tT5"/>
                     </view>
@@ -99,6 +110,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="dateField" destination="lDW-L5-t7b" id="0Uv-s8-F0a"/>
                         <outlet property="datePicker" destination="O5M-mO-4U5" id="2fu-oS-kAV"/>
                         <outlet property="raceName" destination="a18-l5-kNZ" id="e44-T0-gxx"/>
                         <outlet property="saveButton" destination="67A-mT-a3y" id="faU-FL-1Tl"/>

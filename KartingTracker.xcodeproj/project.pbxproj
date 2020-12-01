@@ -15,6 +15,8 @@
 		FA34AF052575355800770CBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA34AF032575355800770CBF /* LaunchScreen.storyboard */; };
 		FAD4986C257556460055BEE7 /* AddRaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4986B257556460055BEE7 /* AddRaceViewController.swift */; };
 		FAD4986E257560FB0055BEE7 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4986D257560FB0055BEE7 /* Protocol.swift */; };
+		FAD498702576B6850055BEE7 /* RealmCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4986F2576B6850055BEE7 /* RealmCore.swift */; };
+		FAD498732576B7430055BEE7 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD498722576B7430055BEE7 /* DateFormatter.swift */; };
 		FAE69A512575361800FE696E /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE69A502575361800FE696E /* Race.swift */; };
 		FAE69A5525753B8700FE696E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE69A5425753B8600FE696E /* MainViewController.swift */; };
 		FAE69A5825753C3100FE696E /* RaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE69A5625753C3100FE696E /* RaceTableViewCell.swift */; };
@@ -34,6 +36,8 @@
 		FA34AF062575355800770CBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAD4986B257556460055BEE7 /* AddRaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRaceViewController.swift; sourceTree = "<group>"; };
 		FAD4986D257560FB0055BEE7 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		FAD4986F2576B6850055BEE7 /* RealmCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCore.swift; sourceTree = "<group>"; };
+		FAD498722576B7430055BEE7 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		FAE69A502575361800FE696E /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
 		FAE69A5425753B8600FE696E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FAE69A5625753C3100FE696E /* RaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTableViewCell.swift; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				FA34AEF82575355800770CBF /* AppDelegate.swift */,
+				FAD498712576B7300055BEE7 /* Utilities */,
 				FAE69A5A25753D0300FE696E /* Cell */,
 				FA34AEFA2575355800770CBF /* SceneDelegate.swift */,
 				FAE69A5325753A3900FE696E /* AddRace */,
@@ -104,10 +109,19 @@
 			path = KartingTracker;
 			sourceTree = "<group>";
 		};
+		FAD498712576B7300055BEE7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FAD498722576B7430055BEE7 /* DateFormatter.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		FAE69A4F2575360E00FE696E /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				FAE69A502575361800FE696E /* Race.swift */,
+				FAD4986F2576B6850055BEE7 /* RealmCore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -261,10 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD498732576B7430055BEE7 /* DateFormatter.swift in Sources */,
 				FAE69A512575361800FE696E /* Race.swift in Sources */,
 				FA34AEF92575355800770CBF /* AppDelegate.swift in Sources */,
 				FAE69A5825753C3100FE696E /* RaceTableViewCell.swift in Sources */,
 				FAD4986E257560FB0055BEE7 /* Protocol.swift in Sources */,
+				FAD498702576B6850055BEE7 /* RealmCore.swift in Sources */,
 				FAD4986C257556460055BEE7 /* AddRaceViewController.swift in Sources */,
 				FA34AEFB2575355800770CBF /* SceneDelegate.swift in Sources */,
 				FAE69A5525753B8700FE696E /* MainViewController.swift in Sources */,

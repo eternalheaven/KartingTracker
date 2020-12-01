@@ -11,46 +11,43 @@ import RealmSwift
 
 class AddRaceViewController: UIViewController {
     
-    weak var delegate: RefreshProtocol?
-    private let realm = try! Realm()
-    
-    var completionHandler: (() -> Void)?
-    
+    weak var delegate: RefreshDelegate?
+    let realmCore = RealmCore()
+        
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var raceName: UITextField!
     @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var dateField: UITextField!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
+        super.viewDidLoad()        
     }
     
     @IBAction func didTapSaveButton(_ sender: UIBarButtonItem) {
-        if let text = self.raceName.text, !text.isEmpty {
+        if let raceName = self.raceName.text, !raceName.isEmpty {
             let date = self.datePicker.date
-            realm.beginWrite()
-            
-            let newItem = Race()
-            newItem.date = date
-            newItem.raceName = text
-            
-            realm.add(newItem)
-            try! realm.commitWrite()
-            
+            realmCore.commitWrite(date: date, raceName: raceName)
             delegate?.refresh()
-            
             navigationController?.dismiss(animated: true, completion: nil)
-            
-            
         } else {
-            let alert = UIAlertController(title: "Ошибка", message: "Добавьте название гонки", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "Окей", style: UIAlertAction.Style.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            showAlert()
         }
     }
     
     @IBAction func didTapCloseButton(_ sender: Any) {
-       navigationController?.dismiss(animated: true, completion: nil)
+        navigationController?.dismiss(animated: true, completion: nil)
+    }
+    
+    func showAlert() {
+        let alert = UIAlertController(title: "Ошибка", message: "Добавьте название гонки", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Окей", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func configureDatePicker() {
+        let datePicker = UIDatePicker()
+        datePicker.datePickerMode = .date
+//        datePicker.addTarget(self, action: <#T##Selector#>, for: <#T##UIControl.Event#>)
     }
     
 }

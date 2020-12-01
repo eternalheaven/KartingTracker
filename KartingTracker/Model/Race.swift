@@ -10,9 +10,9 @@ import RealmSwift
 
 
 class Race: Object {
+    
     @objc dynamic var raceName: String = " "
     @objc dynamic var date: Date = Date()
     @objc dynamic var laps: Int = 1
-    
     
 }

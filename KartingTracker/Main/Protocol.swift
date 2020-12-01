@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol RefreshProtocol: class {
+protocol RefreshDelegate: class {
     func refresh()
 }
