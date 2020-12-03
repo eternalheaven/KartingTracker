@@ -60,7 +60,7 @@ extension MainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = raceTableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? RaceTableViewCell {
             let date = dateFormatter.formate(date: races[indexPath.row].date)
-            cell.configure(date: date, raceName: races[indexPath.row].raceName)
+            cell.configure(date: date, raceName: races[indexPath.row].raceName, laps: races[indexPath.row].laps, position: races[indexPath.row].position)
             return cell
         }
         return UITableViewCell()

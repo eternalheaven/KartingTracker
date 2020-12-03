@@ -67,33 +67,47 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Дата" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lDW-L5-t7b">
-                                <rect key="frame" x="20" y="174" width="168" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="168" id="AKX-Aa-oN1"/>
-                                    <constraint firstAttribute="height" constant="34" id="g7P-CT-lRh"/>
-                                </constraints>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="0H1-7R-8Fe">
+                                <rect key="frame" x="0.0" y="147" width="414" height="140"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Круги" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSL-Ib-hgH">
+                                <rect key="frame" x="20" y="295" width="65" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Позиция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esG-wK-oWs">
+                                <rect key="frame" x="20" y="375" width="80" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uL2-1i-Fx0">
+                                <rect key="frame" x="20" y="336" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="O5M-mO-4U5">
-                                <rect key="frame" x="20" y="646" width="374" height="162"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="4bD-YX-cJv"/>
-                                    <constraint firstAttribute="height" constant="162" id="qnz-4a-JaQ"/>
-                                </constraints>
-                            </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KLJ-UU-9Un">
+                                <rect key="frame" x="20" y="416" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="W1H-ad-yRd">
+                                <rect key="frame" x="154" y="295" width="240" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="a18-l5-kNZ" firstAttribute="top" secondItem="vxU-2A-kkJ" secondAttribute="bottom" constant="8" id="5bP-p2-LoZ"/>
-                            <constraint firstItem="O5M-mO-4U5" firstAttribute="top" secondItem="a18-l5-kNZ" secondAttribute="bottom" constant="8" id="7IT-fL-kpY"/>
                             <constraint firstItem="a18-l5-kNZ" firstAttribute="leading" secondItem="tfw-ug-tT5" secondAttribute="leading" constant="20" id="7nf-JD-6aU"/>
-                            <constraint firstItem="lDW-L5-t7b" firstAttribute="leading" secondItem="tfw-ug-tT5" secondAttribute="leading" constant="20" id="E9h-mM-tKn"/>
-                            <constraint firstItem="O5M-mO-4U5" firstAttribute="leading" secondItem="tfw-ug-tT5" secondAttribute="leading" constant="20" id="KYm-Z6-8fw"/>
                             <constraint firstItem="vxU-2A-kkJ" firstAttribute="leading" secondItem="tfw-ug-tT5" secondAttribute="leading" constant="20" id="MOD-Im-P6O"/>
                             <constraint firstItem="vxU-2A-kkJ" firstAttribute="top" secondItem="tfw-ug-tT5" secondAttribute="top" id="NSe-ER-GER"/>
-                            <constraint firstItem="lDW-L5-t7b" firstAttribute="top" secondItem="a18-l5-kNZ" secondAttribute="bottom" constant="35" id="mBl-qR-fkZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tfw-ug-tT5"/>
                     </view>
@@ -110,8 +124,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="dateField" destination="lDW-L5-t7b" id="0Uv-s8-F0a"/>
-                        <outlet property="datePicker" destination="O5M-mO-4U5" id="2fu-oS-kAV"/>
+                        <outlet property="datePicker" destination="0H1-7R-8Fe" id="lFv-iB-GRD"/>
+                        <outlet property="lapsField" destination="uL2-1i-Fx0" id="5Wm-Qh-4Oj"/>
+                        <outlet property="positionField" destination="KLJ-UU-9Un" id="5nA-WS-uTc"/>
                         <outlet property="raceName" destination="a18-l5-kNZ" id="e44-T0-gxx"/>
                         <outlet property="saveButton" destination="67A-mT-a3y" id="faU-FL-1Tl"/>
                     </connections>

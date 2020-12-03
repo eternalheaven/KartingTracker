@@ -10,13 +10,17 @@ import RealmSwift
 
 class RealmCore {
     
-    let realm = try! Realm()
+    lazy var realm:Realm = {
+        return try! Realm()
+    }()
     
-    func commitWrite(date: Date, raceName: String) {
+    func commitWrite(date: Date, raceName: String, laps: String, position: String) {
         realm.beginWrite()
         let newObject = Race()
         newObject.date = date
         newObject.raceName = raceName
+        newObject.laps = laps
+        newObject.position = position
         realm.add(newObject)
         try! realm.commitWrite()
     }

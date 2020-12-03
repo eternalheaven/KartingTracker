@@ -13,6 +13,8 @@ class Race: Object {
     
     @objc dynamic var raceName: String = " "
     @objc dynamic var date: Date = Date()
-    @objc dynamic var laps: Int = 1
+    @objc dynamic var laps: String = " "
+    @objc dynamic var position: String = " "
+    
     
 }
